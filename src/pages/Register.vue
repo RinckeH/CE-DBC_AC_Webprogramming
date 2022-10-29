@@ -1,6 +1,8 @@
 <template>
+    <!-- This page is used to register the private invited startup.-->
     <div class="register">
         <start-screen-template-vue>
+            <!-- calling / importing the start screen template vue to use the left image with the aqua background color -->
             <h2>WELKOM</h2>
             <h1>Aanmelden</h1>
             <p class="introduction"> Lorem ipsum dolor sit amet, consectetur adipiscing elxit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -20,6 +22,7 @@
 
 <script>
 import StartScreenTemplateVue from '../components/StartScreenTemplate.vue';
+// importing the component to use it in within the template//
 
 export default {
     name: 'Register',
@@ -36,7 +39,8 @@ export default {
 </script>
 
 <style scoped>
-
+    /* it is scoped so all the styling elements are only for the BasepPage 
+    and won't influence other pages / components */
 .content-right > h2 {
         font-family: 'Lato', sans-serif;
         font-weight: 700;

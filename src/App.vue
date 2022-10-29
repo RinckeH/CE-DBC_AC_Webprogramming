@@ -1,4 +1,5 @@
 <template>
+
   <div id="app">
  
     <router-view/>
@@ -12,7 +13,7 @@ export default {
 </script>
 
 <style>
-
+  /* Here comes the basic / consistent styling for the entire app / startup dashboard platform */
 body {
   padding: 0;
   margin: 0
@@ -53,7 +54,8 @@ button.primary {
 
 textarea, select, input, button { outline: none; }
 
-.content-block {
+.content-block { 
+  /* This is the 'head block' of every page within the startup dashboard platform */
   background-image: url('~@/assets/images/BOM-investor_readiness_sessie-2058.jpg');
   background-position: 50% 20%;
   background-size: cover;
@@ -68,7 +70,7 @@ textarea, select, input, button { outline: none; }
   background-color: #135B5C;
   opacity: 0.95;
   position: absolute;
-  mix-blend-mode: multiply;
+  mix-blend-mode: multiply; /* to blend the original picture */
   top: 0;
   right: 0;
   left: 0;

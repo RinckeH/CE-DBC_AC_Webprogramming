@@ -1,6 +1,7 @@
 <template>
-
+    <!--- This page is the first home screen when a startup enters the platform-->
     <base-page>
+        <!-- calling / importing the base page vue component to use the left sticky side bar and two google material items -->
         <div class="welkom-message">
             <h2>Hallo Floris,</h2>
             <h1>Welkom terug!</h1>
@@ -158,6 +159,7 @@
 
 <script>
 import BasePage from '../components/BasePage.vue';
+// importing the component to use it in within the template//
 
 export default {
     name: 'StartScreen',
@@ -300,7 +302,6 @@ export default {
     padding-left: 12px;
     padding-right: 321px;
 
-
 }
 .signin-block-information {
     color: white;
@@ -329,7 +330,8 @@ select {
     font-weight: 800px;
     align-items: center;
     -webkit-appearance: none;
-    -moz-appearance: none;
+     /* The select tag comes with his own style and arrow, 
+    to get rid of the permanent styling and the arrow use the -webkit-appearnce and add none to remove it */
     text-align: center;
     font-weight: 600;
 }
@@ -429,10 +431,5 @@ select {
     font-weight: 400;
     padding-right: 104px;
 }
-
-
-
-
-
 
 </style>

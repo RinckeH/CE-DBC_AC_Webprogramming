@@ -1,4 +1,7 @@
 <template>
+    <!-- This compoent is the base layout for all Startup Dashboard pages. 
+        It consits of a left and right side. With on the left a sticky sidebar and on the right two main icons to go to 
+        1. your personal account and 2. to the top of your screen / the page -->
    <div class="basepage">
     <div class="left"> 
         <!-- To split the screen into left and right -->
@@ -27,11 +30,14 @@
             <div class="content-right">
                 <span class="material-symbols-outlined person">person</span>
                 <span class="material-symbols-outlined arrow">arrow_upward</span>
-                <!-- 'material-symbols-outlined'is a standard class that can be called to use any icon of the google icons api -->
+                <!-- 'material-symbols-outlined'is a standard class that can be called to use any icon of the google icons api. 
+                    After the class you can fill in the icon's name that you want to use. -->
             </div>
             <slot></slot>
             <!-- slot = to pass a template fragment to a child component, 
-                and let the child component render the fragment within its own template. -->
+                and let the child component render the fragment within its own template.
+                In other words, if you import the basepage into a template of a page, the new written code will come in the slot area.
+             -->
         </div>
     </div>
 
@@ -47,13 +53,14 @@
     and won't influence other pages / components */
 
 .basepage{
-    display: flex;
-    height: 100vh;
+    display: flex; /* to make it a flexbox */
+    height: 100vh; /* this means: 100% of the viewport height */
 }
 
 .left {
         
-        position: relative;
+        position: relative; 
+        /* The element will be posiitioned relative to its origial postion.*/
         
     }
 
@@ -65,7 +72,8 @@
 .sidebar {
     position: fixed; 
     /* An element with position: fixed; is positioned relative to the viewport, 
-    which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element. */
+    which means it always stays in the same place even if the page is scrolled. 
+    The top, right, bottom, and left properties are used to position the element. */
     width: 363px;
     height: calc(100vh - 64px - 84px);
     background-color: #29B7B9;

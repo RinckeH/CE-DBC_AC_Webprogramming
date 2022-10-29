@@ -1,6 +1,7 @@
 <template>
     <div class="passwordreset">
         <start-screen-template-vue>
+             <!-- calling / importing the start screen template vue to use the left image with the aqua background color -->
             <h2>ACCOUNTGEGEVENS</h2>
             <h1>Wachtwoord</h1>
             <p class="introduction"> Verander je wachtwoord hieronder door de velden in te vullen en ontvang een bevestiging van je gewijzigde gegevens. </p>
@@ -20,7 +21,7 @@
 
 <script>
 import StartScreenTemplateVue from '../components/StartScreenTemplate.vue';
-
+// importing the component to use it in within the template//
 export default {
     name: 'PasswordReset',
     components:{
@@ -36,8 +37,9 @@ export default {
 </script>
 
 <style scoped>
-
-.content-right > h2 {
+    /* it is scoped so all the styling elements are only for the BasepPage 
+    and won't influence other pages / components */
+    .content-right > h2 {
         font-family: 'Lato', sans-serif;
         font-weight: 700;
         color:#29B7B9;

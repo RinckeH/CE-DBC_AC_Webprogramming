@@ -1,5 +1,7 @@
 <template>
+    <!--This page is a startup account, the person who got the invite can view his personal details-->
     <BasePage> 
+        <!-- calling / importing the base page vue component to use the left sticky side bar and two google material items -->
         <div class="welkom-message">
             <h2>Hallo Floris, welkom bij</h2>
             <h1>Accountinstellingen</h1>
@@ -19,7 +21,7 @@
             </div>
         </div>
 
-        <div class="community">
+        <div class="community"> <!-- This block will be an exmaple of a flex box with multiple flexboxes in it to style it via a more specific way-->
             <div  class="community-left">
                 <h5>JOIN ONZE COMMUNITY </h5>
                 <p>‘Onbeperkte, intensieve en persoonlijke hulp voor jouw startup’</p>
@@ -98,6 +100,8 @@
                         <div class="member-icons">
                         <span class="material-symbols-outlined more_vert">more_vert</span>
                         <span class="material-symbols-outlined close">close</span>
+                        <!-- 'material-symbols-outlined'is a standard class that can be called to use any icon of the google icons api. 
+                         After the class you can fill in the icon's name that you want to use. -->
                         </div>
                         </div>
 
@@ -149,12 +153,6 @@
 
 
 
-
-
-
-
-
-
             <div class="information-supervisor">
                 <h2>GEGEVENS BEGELEIDER</h2>
                 <table>
@@ -186,18 +184,12 @@
 
 
 
-
-
-
-
-
-
             <div class="history">
                 <h2>HISTORIE</h2>
                 <h3>Bekijk hier jouw persoonlijke historie. Selecteer via de filter functie welke details je wilt inzien.  </h3>
                 <div class="history-content">
                     <div class="history-overview-content">
-                        <div class="history-item">
+                        <div class="history-item"> <!-- The repeat class name is due to the same style per finished program-->
                             <p>Invenstor Readiness Program | Editie 18 | 20-06-2022 / 25-08-2022 | Lopend</p>   
                         </div>
 
@@ -223,7 +215,7 @@
 
             <br>
             <br>
-
+        
          
 
     </BasePage>
@@ -232,7 +224,7 @@
 
 <script>
 import BasePage from "../components/BasePage.vue";
-
+// importing the component to use it in within the template//
 export default {
     name: 'PersonalAccount',
     components:{

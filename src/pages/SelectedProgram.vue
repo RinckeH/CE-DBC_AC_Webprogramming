@@ -1,5 +1,7 @@
 <template>
+    <!-- This page is about the selected program the startup wants to join.-->
     <base-page>
+        <!-- calling / importing the base page vue component to use the left sticky side bar and two google material items -->
         <div class="welkom-message">
                 <h2>Hallo Floris, welkom bij</h2>
                 <h1>Programma’s</h1>
@@ -96,8 +98,6 @@
 
 
 
-
-
         <div class="signin-block">
             <div class="overlay"></div>
             <div class="signin-block-content">
@@ -125,15 +125,6 @@
             </div>
 
       
-
-
-
-
-
-
-
-
-
 
 
 
@@ -176,6 +167,7 @@
 
 <script>
 import BasePage from '../components/BasePage.vue';
+// importing the component to use it in within the template//
 
 export default {
     name: 'SelectedProgram',
@@ -481,7 +473,8 @@ select {
     font-weight: 800px;
     align-items: center;
     -webkit-appearance: none;
-    -moz-appearance: none;
+    /* The select tag comes with his own style and arrow, 
+    to get rid of the permanent styling and the arrow use the -webkit-appearnce and add none to remove it */
     text-align: center;
     font-weight: 600;
 }
@@ -497,13 +490,6 @@ select {
     padding: 10px 40px 10px 40px;
 
 }
-
-
-
-
-
-
-
 
 </style>
 

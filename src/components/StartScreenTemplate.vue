@@ -1,17 +1,19 @@
 <template> 
-<!--  -->
+<!-- This component is a basic layout for all the sign up / log in / log out proces. -->
     <div class="start-screen-template">
         <div class="left"> 
               <!-- To split the screen into left and right -->
             <div class="overlay"></div>
-            <!-- to darken the used image with a green background -->
+            <!-- To darken the used image with a green background -->
             <img class="login-photo" src="@/assets/images/BOM-investor_readiness_sessie-2166_cropped.jpeg" alt="">
         </div>
         <div class="right">
             <div class="content-right">
                 <slot></slot>
                  <!-- slot = to pass a template fragment to a child component, 
-                and let the child component render the fragment within its own template. -->
+                and let the child component render the fragment within its own template. 
+                In other words, if you import the basepage into a template of a page, the new written code will come in the slot area.
+                -->
             </div>
         </div>
     </div>
@@ -41,7 +43,7 @@ export default {
     }
 
     .right {
-        display: flex;
+        display: flex; /* to make it a flexbox */
         justify-content: center;
         align-items: center;
         flex: 1;
@@ -66,7 +68,7 @@ export default {
         position: absolute;
         /* takes the .left  */
         mix-blend-mode: multiply;
-        /* to blend / merging the dark green background color with the image inst */
+        /* to blend / merging the dark green background color with the image. This way te image will keep it original color mixed with green. */
         border-bottom-right-radius: 102px;
         border-top-right-radius: 102px;
     }

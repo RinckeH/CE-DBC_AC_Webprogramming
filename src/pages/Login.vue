@@ -1,4 +1,5 @@
 <template>
+    <!-- This is the login page where a invited startup is known into the platform itself --> 
     <div class="login">
         <start-screen-template-vue> 
             <!-- calling / importing the start screen template vue to use the left image with the aqua background color -->
@@ -20,7 +21,7 @@
 
 <script>
 import StartScreenTemplateVue from '../components/StartScreenTemplate.vue';
-// importing the component//
+// importing the component to use it in within the template//
 
 export default {
     name: 'Login',
@@ -37,14 +38,15 @@ export default {
 </script>
 
 <style scoped>
-
+    /* it is scoped so all the styling elements are only for the BasepPage 
+    and won't influence other pages / components */
 .content-right > h2 {
         font-family: 'Lato', sans-serif;
         font-weight: 700;
         color:#29B7B9;
         font-size: 24px;
     }
-
+    
     .content-right > h1 {
         font-family: 'Lato', sans-serif;
         font-weight: 700;
